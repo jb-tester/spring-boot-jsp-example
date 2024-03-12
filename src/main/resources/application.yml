@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  mvc:
+    view:
+      prefix: /view/
+      suffix: .jsp
+  profiles:
+    active: dev
+  main:
+    banner-mode: off
+  datasource:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
